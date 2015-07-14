@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id,
                   "--name", "oracle",
                   # Oracle claims to need 512MB of memory available minimum
-                  "--memory", "2024",
+                  "--memory", "2048",
                   # Enable DNS behind NAT
                   "--natdnshostresolver1", "on"]
   end
